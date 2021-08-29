@@ -1,0 +1,143 @@
+.portafolio {
+	height: 100%;
+  box-sizing: border-box;
+  padding: 5% 0;
+  &-title {
+    width: 100%;
+    @include title-big;
+    span {
+      color: $main-color;
+    }
+  }
+  &-filter {
+    display: flex;
+    justify-content: center;
+    margin: 2% 0;
+    margin-bottom: 5%;
+    a {
+      font-family: $font;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      display: inline-block;
+      color: white;
+      background-color: $main-color;
+      border-radius: 30px;
+      padding: 5px 15px;
+      margin: 0 10px;
+			text-decoration: none;
+    }
+  }
+  &-grid {
+    width: 80%;
+    margin: 0 auto;
+    @include display-grid;
+    @include grid-template-columns(grid-repeat(1, 100%));
+		@include grid-template-rows(grid-repeat(9, 40vh));
+    grid-gap: 1.5rem;
+		@include media(tablet){
+			height: 100%;
+			@include grid-template-columns(grid-repeat(2, 50%));
+			@include grid-template-rows(grid-repeat(5, 40vh));
+			justify-content: space-evenly;
+			align-content: space-between;
+		}
+		@include media(desktop-s){
+			width: 80%;
+			@include grid-template-columns(grid-repeat(3, 30%));
+			@include grid-template-rows(grid-repeat(3, 30%));
+		}
+  }
+}
+
+.portafolio-box {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  color: white;
+  text-align: center;
+  place-content: initial;
+  background: black;
+  position: relative;
+  & .portafolio-box-info {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #08d665;
+    opacity: 0;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  &:hover .portafolio-box-info {
+    opacity: 1;
+  }
+  &-info {
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+		a {
+			color: white;
+			text-decoration: none;
+		}
+    & .icon {
+      box-sizing: border-box;
+      margin: 0 10px;
+    }
+  }
+  figure {
+    width: 100%;
+    height: 100%;
+    .img {
+			// opacity: .9;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+			object-position: top;
+      display: block;
+    }
+  }
+}
+
+
+.portafolio-skills{
+	width: 100%;
+	margin: 1rem auto;
+}
+
+.skills-box{
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	&__tec {
+		margin: 1rem 0;
+		width: 85%;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		flex-wrap: wrap;
+		padding: 2%;
+		border: 1px solid white ;
+		box-shadow: 0 1px 30px rgba(255, 255, 255, 0.2);
+	}
+	&__leng{
+		width: 15%;
+		color: white;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 5px 10px;
+		& span {
+			font-family: $font;
+			font-size: 14px;
+		}
+		& .icon{
+			color: $main-color;
+		}	
+	}
+}

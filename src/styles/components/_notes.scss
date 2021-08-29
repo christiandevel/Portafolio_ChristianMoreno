@@ -1,0 +1,99 @@
+.notes {
+  &-title {
+    text-align: center;
+    color: white;
+    font-family: $font;
+    font-size: 42px;
+    font-weight: bold;
+    text-transform: uppercase;
+		margin-bottom: 5%;
+    span {
+      color: $main-color;
+    }
+  }
+}
+
+.notes-galery {
+  width: 95%;
+	height: auto;
+  display: grid;
+  margin: 1rem auto;
+  grid-template-columns: repeat(1, 90%);
+  grid-template-rows: repeat(3, 85vh);
+	grid-gap: 30px;
+  justify-content: space-evenly;
+  align-content: space-between;
+}
+
+.notes-box {
+  box-shadow: 0 1px 30px rgba(255, 255, 255, 0.2);
+  width: 100%;
+	margin: 2rem 0;
+  height: 100%;
+  box-sizing: border-box;
+  &-img {
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    figure {
+      width: 100%;
+      height: 100%;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+      }
+    }
+  }
+}
+
+.notes-text {
+  padding: 20px;
+  &-title {
+    padding: 10px 0;
+    color: white;
+    font-family: $font;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  &-label {
+    display: flex;
+    color: white;
+    align-items: center;
+    .date {
+      color: $main-color;
+      font-size: 12px;
+      margin-left: 5px;
+      font-family: $font;
+    }
+    .item {
+      margin-left: 5px;
+      font-size: 12px;
+      font-family: $font;
+    }
+  }
+  &-description {
+    color: white;
+    padding: 10px 0;
+    p {
+      font-family: $font;
+      font-size: 12px;
+    }
+  }
+  &-btn {
+    font-size: 12px;
+    border-radius: 30px;
+    display: inline-block;
+    background-color: $main-color;
+    padding: 12px 22px;
+    a {
+      font-family: $font;
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
+

@@ -1,0 +1,22 @@
+// Valores Generales, Responsive, Normalice, Variables
+@import 'globals/normalize';
+@import 'globals/breakpoints';
+@import 'globals/var';
+@import 'globals/mixins';
+
+@import 'globals/grids';
+// Hojas de Estilo
+@import 'components/navbar';
+@import 'components/particles';
+@import 'components/main';
+@import 'components/about';
+@import 'components/services';
+@import 'components/portafolio';
+@import 'components/notes';
+@import 'components/footer';
+
+body {
+	background-color: $third-color;
+}
+
+

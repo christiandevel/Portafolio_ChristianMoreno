@@ -1,0 +1,84 @@
+.about {
+  background-color: black;
+  color: white;
+  box-sizing: border-box;
+  display: flex;
+	flex-direction: column;
+  justify-content: start;
+  align-items: center;
+	padding: 1.5rem 0;
+	@include media(tablet){
+		flex-direction: row;
+		justify-content: center;
+		height: 100vh;
+	}
+  &-img {
+    width: 60%;
+    display: block;
+    justify-items: center;
+    box-sizing: inherit;
+		@include media(tablet){
+			width: 40%;
+		}
+		@include media(desktop-s){
+			width: 30%
+		}
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  &-info {
+    box-sizing: border-box;
+    margin-top: 5%;
+    width: 80%;
+    font-family: $font;
+		@include media(tablet){
+			width: 50%;
+			margin-top: 0;
+			margin-left: 1rem;
+		}
+		@include media(desktop-s){
+			width: 40%;
+			margin-left: 1.3rem;
+		}
+    &-name {
+      @include title(1.5rem);
+      margin-bottom: 5px;
+			@include media(tablet){
+				@include title(1.8rem);
+			}
+			@include media(desktop-s){
+				@include title(2.2rem);
+			}
+    }
+    &-description {
+			@include text-parraf(0.9rem);
+      margin-bottom: 3%;
+			@include media(tablet){
+				@include text-parraf(1rem);
+			}
+			@include media(desktop-s){
+				@include text-parraf(1.3rem);
+			}
+    }
+    a {
+			@include text-parraf(0.8rem);
+      display: inline-block;
+      color: white;
+      background-color: $main-color;
+      border-radius: 30px;
+      padding: 10px 12px;
+			text-decoration: none;
+			@include media(tablet){
+				@include text-parraf(0.9rem);
+			}
+			@include media(desktop-s){
+				@include text-parraf(1.2rem);
+			}
+    }
+    span {
+      color: $main-color;
+    }
+  }
+}

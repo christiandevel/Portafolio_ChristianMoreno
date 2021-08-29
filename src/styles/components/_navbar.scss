@@ -1,0 +1,137 @@
+.main-header {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  z-index: 1000;
+  @include media(tablet) {
+    padding: 0 1.5rem;
+  }
+  @include media(desktop-s) {
+    padding: 0 2rem;
+  }
+}
+
+.main-header__logo {
+  a {
+    text-decoration: none;
+    font-family: $font;
+    color: $main-color;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+  }
+}
+
+.main-header__menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  margin-left: -100%;
+  transition: all 0.3s linear;
+  background-color: $second-color;
+  z-index: 1000;
+  @include media(tablet) {
+    width: auto;
+    margin-left: 0;
+    background-color: transparent;
+    position: initial;
+    height: auto;
+  }
+  &.show {
+    margin-left: 0;
+  }
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  width: 70%;
+  height: 100%;
+  background-color: $third-color;
+  padding: 2rem 0;
+  @include media(tablet) {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    background-color: transparent;
+    padding: 0;
+    margin-bottom: 0;
+  }
+}
+
+.link-item {
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+  @include text-main(1.3rem);
+  @include media(tablet) {
+    width: auto;
+    padding: 1rem 0.5rem;
+    @include text-main(1rem);
+    color: $second-color;
+  }
+  @include media(desktop-s) {
+    @include text-main(1.3rem);
+    color: $second-color;
+  }
+  &:hover {
+    background-color: $main-color;
+    color: $second-color;
+    text-decoration: none;
+    border-right: 10px solid $second-color;
+    @include media(tablet) {
+      border-right: 0;
+    }
+  }
+}
+
+button:focus {
+  outline: none;
+}
+
+.button-menu {
+  z-index: 1100;
+  width: 3rem;
+  height: 1.5rem;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  background: none;
+  align-items: center;
+  justify-content: start;
+  cursor: pointer;
+  @include media(tablet) {
+    display: none;
+  }
+}
+
+.button-menu span {
+  width: 2rem;
+  height: 0.3rem;
+  margin-top: 0.2rem;
+  position: relative;
+  background-color: $main-color;
+  transform-origin: 4px 0px;
+  transition: all 0.3s linear;
+}
+
+.button-menu.close span {
+  opacity: 1;
+  transform: rotate(45deg) translate(0px, 0px);
+  background: $main-color;
+}
+
+.button-menu.close span:nth-child(2) {
+  transform: rotate(-45deg) translate(-8px, 5px);
+}
+
+.button-menu.close span:nth-child(3) {
+  display: none;
+}

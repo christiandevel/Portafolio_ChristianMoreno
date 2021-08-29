@@ -1,0 +1,223 @@
+extends ./views/_plantilla.pug
+block contenido
+	section(class="about" id="about")
+		.about-img
+			img(src="./assets/images/perfil.png", alt="alt")
+		.about-info
+			p(class="about-info-name") Hi, my name is 
+				span Christian.
+			p(class="about-info-description") I'm a Colombian web and mobile developer, with more than a year of experience.
+			p(class="about-info-description") I have worked with different companies in the development of their websites and internal mobile applications, with some participation in the design process of the user experience, mainly focused on front-end development for digital products, I'm passionate about technology, challenges and never stop appearing.
+			p(class="about-info-description") If you have a job offer, a project proposal or just want to say hi contact me.
+			a(class="about-info-cv" download="HV_ChristianAndres_Desarrollador.pdf" href="./assets/docs/HV_ChristianAndres_Desarrollador.pdf" target="_blank") Download CV
+	section(class="services" id="services")
+		.services-title
+			p my 
+				span services
+		.services-grid
+			.services-box
+				.services-box-img
+					img(src="./assets/images/Service-Develoment.svg", alt="img-service")
+				.services-box-title
+					p Developer
+				.services-box-descripcion
+					p Developer with experience in backend, specialized in frontend and knowledge in different programming languages.
+			.services-box
+				.services-box-img
+					img(src="./assets/images/Service-WebComponents.svg", alt="img-service")
+				.services-box-title
+					p Web
+				.services-box-descripcion
+					p Publishing of several web sites for different companies, landings and internal web sites.
+			.services-box
+				.services-box-img
+					img(src="./assets/images/Service-Mobile.svg", alt="img-service")
+				.services-box-title
+					p Mobile
+				.services-box-descripcion
+					p Knowledge in mobile development, in different native lenjuages and frameworks.
+			.services-box
+				.services-box-img
+					img(src="./assets/images/Service-Responsive.svg", alt="img-service")
+				.services-box-title
+					p Responsive
+				.services-box-descripcion
+					p Implementation of banners in responsive design theme for different devices.
+			.services-box
+				.services-box-img
+					img(src="./assets/images/Service-Seo.svg", alt="img-service")
+				.services-box-title
+					p Seo
+				.services-box-descripcion
+					p Knowledge and application in web positioning, meta data management and performance of your website.
+			.services-box
+				.services-box-img
+					img(src="./assets/images/Service-Web.svg", alt="img-service")
+				.services-box-title
+					p Web Components
+				.services-box-descripcion
+					p Implementation of web components, knowledge in different framworks and liberarias.
+	section(class="portafolio" id="portafolio")
+		.portafolio-title
+			p my 
+				span portafolio
+		.portafolio-filter
+			a(href="") All 
+			a(href="") Mobile
+			a(href="") Develoment
+			a(href="") Practice
+		.portafolio-grid
+			.portafolio-box
+				.portafolio-box-info
+					a(href="#"): i(class="fas fa-eye fa-3x icon")
+					a(href="#"): i(class="fas fa-code fa-3x icon")
+				figure(class="portafolio-box-img")
+					img(src="./assets/images/Portafolio/gopass.com.co.png", alt="alt" class="img")
+			.portafolio-box
+				.portafolio-box-info
+					a(href="#"): i(class="fas fa-eye fa-3x icon")
+					a(href="#"): i(class="fas fa-code fa-3x icon")
+				figure(class="portafolio-box-img")
+					img(src="./assets/images/Portafolio/segurosnovus.com.co.png", alt="alt" class="img")
+			.portafolio-box
+				.portafolio-box-info
+					a(href="#"): i(class="fas fa-eye fa-3x icon")
+					a(href="#"): i(class="fas fa-code fa-3x icon")
+				figure(class="portafolio-box-img")
+					img(src="./assets/images/Portafolio/boostrap.png", alt="alt" class="img")
+			.portafolio-box
+				.portafolio-box-info
+					a(href="#"): i(class="fas fa-eye fa-3x icon")
+					a(href="#"): i(class="fas fa-code fa-3x icon")
+				figure(class="portafolio-box-img")
+					img(src="./assets/images/Portafolio/google.png", alt="alt" class="img")
+			.portafolio-box
+				.portafolio-box-info
+					a(href="#"): i(class="fas fa-eye fa-3x icon")
+					a(href="#"): i(class="fas fa-code fa-3x icon")
+				figure(class="portafolio-box-img")
+					img(src="./assets/images/Portafolio/juego.png", alt="alt" class="img")
+			.portafolio-box
+				.portafolio-box-info
+					a(href="#"): i(class="fas fa-eye fa-3x icon")
+					a(href="#"): i(class="fas fa-code fa-3x icon")
+				figure(class="portafolio-box-img")
+					img(src="./assets/images/Portafolio/Landign-GoPass.com.co.png", alt="alt" class="img")
+			.portafolio-box
+				.portafolio-box-info
+					a(href="#"): i(class="fas fa-eye fa-3x icon")
+					a(href="#"): i(class="fas fa-code fa-3x icon")
+				figure(class="portafolio-box-img")
+					img(src="./assets/images/Portafolio/landign-soat.com.co.png", alt="alt" class="img")
+			.portafolio-box
+				.portafolio-box-info
+					a(href="#"): i(class="fas fa-eye fa-3x icon")
+					a(href="#"): i(class="fas fa-code fa-3x icon")
+				figure(class="portafolio-box-img")
+					img(src="./assets/images/Portafolio/Materialize.png", alt="alt" class="img")
+			.portafolio-box
+				.portafolio-box-info
+					a(href="#"): i(class="fas fa-eye fa-3x icon")
+					a(href="#"): i(class="fas fa-code fa-3x icon")
+				figure(class="portafolio-box-img")
+					img(src="./assets/images/Portafolio/PlatziGame.png", alt="alt" class="img")
+		.portafolio-skills
+			.skills-box
+				.skills-box__tec
+					.skills-box__leng
+						span(class="fab fa-html5 fa-4x icon")
+						span Html
+					.skills-box__leng
+						span(class="fab fa-css3-alt fa-4x icon")
+						span Css
+					.skills-box__leng
+						span(class="fab fa-js fa-4x icon")
+						span JS
+					.skills-box__leng
+						span(class="fas fa-crosshairs fa-4x icon")
+						span Seo
+				.skills-box__tec
+					.skills-box__leng
+						span(class="fab fa-react fa-3x icon")
+						span React
+					.skills-box__leng
+						span(class="fab fa-vuejs fa-3x icon")
+						span Vue
+					.skills-box__leng
+						span(class="fab fa-angular fa-3x icon")
+						span Angular
+					.skills-box__leng
+						span(class="fab fa-sass fa-3x icon")
+						span Sass
+					.skills-box__leng
+						span(class="fab fa-bootstrap fa-3x icon")
+						span Bootstrap
+					.skills-box__leng
+						span(class="fab fa-npm fa-3x icon")
+						span npm
+				.skills-box__tec
+					.skills-box__leng
+						span(class="fab fa-php fa-3x icon")
+						span Php
+					.skills-box__leng
+						span(class="fab fa-node fa-3x icon")
+						span Node
+					.skills-box__leng
+						span(class="fab fa-android fa-3x icon")
+						span Android
+					.skills-box__leng
+						span(class="fab fa-git fa-3x icon")
+						span Git
+					.skills-box__leng
+						span(class="fas fa-database fa-3x icon")
+						span NoSQL		
+	section(class="notes" id="notes")
+		.notes-title
+			p my 
+				span notes
+		.notes-galery
+			.notes-box
+				.notes-box-img
+					figure
+						img(src="./assets/images/notes_webpack.png", alt="")
+				.notes-text
+					.notes-text-title
+						p Webpack
+					.notes-text-label
+						i(class="far fa-clock fa-2x")
+						span(class="date") August 24, 2021
+						span(class="item") | Develoment
+					.notes-text-description
+						p Webpack is a static module package for modern JS applications: It builds a dependency graph that maps each module to one or more modules as appropriate.
+					.notes-text-btn
+						a(href="https://www.notion.so/Webpack-e79874a6974d44ddafeda64217610fb0" target="__blank") Read more
+			.notes-box
+				.notes-box-img
+					figure
+						img(src="./assets/images/notes_finances.png", alt="")
+				.notes-text
+					.notes-text-title
+						p Personal finances
+					.notes-text-label
+						i(class="far fa-clock fa-2x")
+						span(class="date") Juli 30, 2021
+						span(class="item") | Develoment
+					.notes-text-description
+						p Financial education allows us to draw up a defined plan to enjoy our life, both in the present and in the future, considering gradual decisions and facing any unforeseen eventuality.
+					.notes-text-btn
+						a(href="https://www.notion.so/Curso-de-Finanzas-Personales-c6de1fa2a16348c3b776d3a016eb7af6" target="__blank") Read more
+			.notes-box
+				.notes-box-img
+					figure
+						img(src="./assets/images/notes_sequence.png", alt="")
+				.notes-text
+					.notes-text-title
+						p Sequence adverbs
+					.notes-text-label
+						i(class="far fa-clock fa-2x")
+						span(class="date") May 15, 2021
+						span(class="item") | Develoment
+					.notes-text-description
+						p Adverbs of sequence also describe time. We use adverbs of sequence to describe the order in which things happen. We often use adverbs of sequence to tell a story...
+					.notes-text-btn
+						a(href="https://www.notion.so/Sequence-adverbs-a064d0b97e024f5686a38640932cdf04" target="__blank") Read more

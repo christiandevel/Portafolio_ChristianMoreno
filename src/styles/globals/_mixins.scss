@@ -1,0 +1,27 @@
+@mixin text-main($size){
+	font-family: $font;
+	font-size: $size;
+	color: $main-color;
+}
+
+@mixin text-parraf($size){
+	font-family: $font;
+	font-size: $size;
+	color: $second-color;
+}
+
+@mixin title($size){
+	font-family: $font;
+	font-size: $size;
+	color: $second-color;
+	font-weight: bold;
+}
+
+@mixin title-big {
+	text-align: center;
+	font-family: $font;
+	font-size: 2.5rem;
+	color: $second-color;
+	font-weight: bold;
+	text-transform: uppercase;
+}

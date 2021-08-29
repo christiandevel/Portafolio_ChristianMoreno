@@ -1,0 +1,80 @@
+main {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: $third-color;
+  display: block;
+  z-index: 1;
+}
+
+.main-text {
+  position: relative;
+  top: 35%;
+  width: 80%;
+  margin-left: 1.5rem;
+  z-index: 100;
+  @include text-parraf(1.5rem);
+	@include media(desktop-s) {
+    margin-left: 2rem;
+  }
+}
+
+.main-text-content__info {
+  width: 100%;
+	@include media(tablet){
+		width: 90%;
+	}
+	@include media(desktop-s) {
+    width: 70%;
+  }
+  p {
+    @include text-parraf(1rem);
+		@include media(tablet){
+			@include text-parraf(1.2rem);
+		}
+		@include media(desktop-s) {
+			@include text-parraf(1.5rem);
+		}
+  }
+  a {
+    display: inline-block;
+    background-color: $main-color;
+    border-radius: 30px;
+    padding: 10px 28px;
+    margin-top: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    @include text-parraf(0.9rem);
+    &:hover {
+      box-shadow: 1px 5px 12px rgba(0, 0, 0, 0.15);
+    }
+  }
+}
+
+.main-text-content {
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  @include text-parraf(1.3rem);
+	@include media(tablet){
+		@include text-parraf(1.8rem);
+	}
+	@include media(desktop-s){
+		@include text-parraf(2.1rem);
+	}
+  span {
+    font-weight: bold;
+  }
+}
+.typed {
+  @include text-main(1.4rem);
+  font-weight: bold;
+	@include media(tablet){
+		@include text-main(2rem);
+	}
+	@include media(desktop-s) {
+		@include text-main(2.5rem);
+	}
+}
